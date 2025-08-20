@@ -1,6 +1,7 @@
 // src/App.tsx
 import { InputField } from "./components/InputField/InputField";
 import { DataTable, type Column } from "./components/DataTable/DataTable";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function App() {
   const users = [
@@ -19,6 +20,7 @@ export default function App() {
       <h1 className="text-xl font-bold">Demo</h1>
       <InputField label="Username" placeholder="Enter username" helperText="Helper text" />
       <DataTable data={users} columns={columns} selectable />
+      <Analytics/>
     </div>
   );
 }
