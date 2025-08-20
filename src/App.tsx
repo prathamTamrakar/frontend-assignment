@@ -1,7 +1,7 @@
 // src/App.tsx
 import { InputField } from "./components/InputField/InputField";
 import { DataTable, type Column } from "./components/DataTable/DataTable";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function App() {
   const users = [
